@@ -17,7 +17,5 @@ jobs:
     steps:
       - run: git clone https://github.com/kangabut/itsukibot
       - run: sudo apt install tty-clock && sudo apt install sox && sudo apt install jq && sudo apt install figlet && sudo apt install wget && sudo apt install ffmpeg && sudo apt install nodejs && sudo apt install tesseract-ocr-all -y
-      - run: npm install
-      - run: npm audit fix
       - run: tty-clock -s -S -x -c -C 2 -b -B
       - run: node kurr.js
