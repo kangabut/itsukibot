@@ -2872,7 +2872,7 @@ break
 		1 BULAN  : ${swbln}
 		3 BULAN  : ${swbbln}
 		PERMANEN : ${swprn}
-		SC:https://github.com/KurrXd`
+		SC : https://github.com/kangabut/itsukibot
  buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'BACK'}, type: 1},
 {buttonId:`donasi`,buttonText:{displayText:'DONASI'},type:1},
