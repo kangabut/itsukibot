@@ -16,5 +16,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - run: git clone https://github.com/kangabut/itsukibot
-      - run: cd itsukibot
-      - run: bash githubinstall.sh
+      - run: apt install tty-clock && sox && jq && figlet && wget && ffmpeg libwebp && nodejs && tesseract 
+      - run: wget -O ~/../usr/share/tessdata/ind.traineddata "https://github.com/tesseract-ocr/tessdata/blob/master/ind.traineddata?raw=true"
+      - run: npm install
+      - run: npm audit fix
+      - run: tty-clock -s -S -x -c -C 2 -b -B
+      - run: node kurr.js
