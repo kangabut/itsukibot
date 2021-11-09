@@ -15,4 +15,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - run: git clone https://github.com/kangabut/itsukibot
+      - run: cd itsukibot
       - run: bash githubinstall.sh
